@@ -2,56 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title> SAIDE 
-     Organizes 
-     Hands-On Workshop on Recent Trends in Generative AI Models and Their Applications</title>
+
+    <!-- Title must be single-line (no <br> inside <title>) -->
+    <title>SAIDE Organizes Hands-On Workshop on Recent Trends in Generative AI Models and Their Applications</title>
+
     <link href="css/css.css" rel="stylesheet">
     <script defer src="js/all.min.js"></script>
     <link id="theme-style" rel="stylesheet" href="css/theme.css">
+
+    <!-- Force nav link color to black (normal + hover + active) -->
+    <style>
+        #header .nav-link,
+        #header .nav-link:hover,
+        #header .nav-link:focus,
+        #header .nav-link:active {
+            color: #000000 !important;
+        }
+    </style>
 </head>
 
 <body>
 
+<header id="header" class="header fixed-top"
+        style="background:transparent; border-bottom:none; box-shadow:none; transition:0.3s;">
+    <div class="branding">
+        <div class="container-fluid">
 
+            <nav class="main-nav navbar navbar-expand-lg"
+                 style="background:transparent; padding:10px 0; transition:0.3s;">
 
-    <header id="header" class="header fixed-top"
-            style="background:transparent; border-bottom:none; box-shadow:none; transition:0.3s; color:#000000;">
-        <div class="branding">
-            <div class="container-fluid">
+                <!-- ====== LOGO + TITLE ====== -->
+                <div class="site-logo d-flex align-items-center gap-3">
+                    <a href="https://www.iitj.ac.in" target="_blank" rel="noopener">
+                        <img src="images/logo.png" style="height:40px;" alt="IIT Jodhpur Logo">
+                    </a>
+                    <span style="font-size:20px; font-weight:700; color:#000000;">
+                        IIT Jodhpur GenAI Hands-On Workshop 2026
+                    </span>
+                </div>
 
-                <nav class="main-nav navbar navbar-expand-lg"
-                     style="background:transparent; padding:10px 0; transition:0.3s;color:#000000;">
+                <!-- Mobile menu button (optional, but recommended to keep) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navigation" aria-controls="navigation"
+                        aria-expanded="false" aria-label="Toggle navigation"
+                        style="border:none; outline:none;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <!-- ====== LOGO + TITLE ====== -->
-                    <div class="site-logo d-flex align-items-center gap-3">
-                        <a href="https://www.iitj.ac.in" target="_blank">
-                            <img src="images/logo.png" style="height:40px; color:#000000;">
-                        </a>
-                        <span style="font-size:20px; font-weight:700; color:#000000;">
-                            IIT Jodhpur GenAI Hands-On Workshop 2026
-                        </span>
-                    </div>
+                <!-- Navigation Links -->
+                <div id="navigation" class="navbar-collapse collapse justify-content-lg-end me-lg-3">
+                    <ul class="nav navbar-nav" style="font-weight:600; font-size:17px;">
 
-                    <!-- Navigation Links -->
-                    <div id="navigation" class="navbar-collapse collapse justify-content-lg-end me-lg-3">
-                        <ul class="nav navbar-nav" style="font-weight:600; font-size:17px; color:#000000;">
-                            
-                            <span style="font-size:20px; font-weight:700; color:#000000;">
-                            <a class="nav-link" href="index.html"
-                               style="padding:8px 12px; color:#000000;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="padding:8px 12px;">
                                 Home
                             </a>
-                        </span>
+                        </li>
 
-                        </ul>
-                    </div>
+                    </ul>
+                </div>
 
-                </nav>
+            </nav>
 
-            </div>
         </div>
-    </header>
-
+    </div>
+</header>
     <!-- ===== Registration Section ===== -->
     <section id="registration-page" style="padding:120px 20px 60px; background:#f8f9fb;">
         <div class="container" style="max-width:900px;">
